@@ -1,23 +1,25 @@
 {
   "name": "heriyol",
-  "version": "1.0.0",
-  "description": "Starter kit for creating React and Express apps",
-  "main": "server.js",
-  "scripts": {
-    "client-install": "cd client && npm install",
-    "start": "node server.js",
-    "server": "nodemon server.js",
-    "client": "npm start --prefix client",
-    "dev": "concurrently \"npm run server\" \"npm run client\""
-  },
-  "author": "Brad Traversy",
-  "license": "MIT",
-  "devDependencies": {
-    "nodemon": "^1.14.6"
-  },
+  "homepage": "client/http://sjunka.github.io/chocolates-heriyol",
+  "version": "0.1.0",
+  "private": true,
   "dependencies": {
+    "@material-ui/core": "^1.4.0",
     "@material-ui/icons": "^1.1.0",
-    "concurrently": "^3.5.1",
-    "express": "^4.16.2"
-  }
+    "gh-pages": "^1.2.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "^1.1.4",
+    "typeface-roboto": "0.0.50"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
+  },
+  "proxy": "http://localhost:5000"
 }
