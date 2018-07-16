@@ -19,7 +19,7 @@ const styles = {
   },
 };
 
-const image = window.location.origin + '/fresas_con_chocolate.jpg'
+//const image = window.location.origin + '/fresas_con_chocolate.jpg'
 
 function SimpleMediaCard(props) {
   const { classes } = props;
@@ -29,7 +29,7 @@ function SimpleMediaCard(props) {
         <CardMedia
           className={classes.media}
           title="Contemplative Reptile"
-          image={image}
+          image="https://i.imgur.com/LQlW56J.jpg"
         />
 
         <CardContent>
