@@ -7,7 +7,6 @@ import Drawer from "../../components/UI/Drawer/Drawer";
 import MainContent from "../MainContent/MainContent";
 
 // Material UI components
-import Typography from '@material-ui/core/Typography';
 
 class Layout extends Component {
   state = {
@@ -33,11 +32,8 @@ class Layout extends Component {
           transitionDuration={this.state.trasni}
         />
 
-        <MainContent>
-          <Typography type="title" color="inherit">
-            Materialidad
-          </Typography>
-        </MainContent>
+        <MainContent/>
+      
       </div>
     );
   }

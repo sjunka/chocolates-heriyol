@@ -1,67 +1,50 @@
-import React from 'react';
-import PropTypes from 'prop-types';
-import { withStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardActions from '@material-ui/core/CardActions';
-import CardContent from '@material-ui/core/CardContent';
-import CardMedia from '@material-ui/core/CardMedia';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+// React imports
+import React, { Component, Fragment } from "react";
+import PropTypes from "prop-types";
 
+// Custom Components
+import MainComponent from "../../components/MainComponent/MainComponent";
 
-const styles = {
-  card: {
-    maxWidth: 345,
-  },
-  media: {
-    height: 110,
-    paddingTop: '56.25%', // 16:9
-  },
-};
+// Material UI
+import { withStyles } from "@material-ui/core/styles";
+import Paper from "@material-ui/core/Paper";
+import Grid from "@material-ui/core/Grid";
 
-//const image = window.location.origin + '/fresas_con_chocolate.jpg'
+// Styles object
+const styles = theme => ({
+    root: {
+        flexGrow: 1
+    },
+    paper: {
+        padding: theme.spacing.unit * 1,
+        textAlign: "center",
+    }
+});
 
-function SimpleMediaCard(props) {
-  const { classes } = props;
-  return (
-    <div>
-      <Card className={classes.card}>
-        <CardMedia
-          className={classes.media}
-          title="StrawberryChocolate"
-          image="./fresas_con_chocolate.jpg"
-        />
+class MainContent extends Component {
+    render() {
+        const { classes } = this.props;
 
-        <CardContent>
-          <Typography gutterBottom variant="headline" component="h2">
-            Heriyol
-          </Typography>
-          <Typography component="p">
-            Chocolate artesanal hecho en Santander.
-            Producto ideal para cada ocasión, arreglos y tortas. 
-            <br/>
-            Contactanos para mayor información
-          </Typography>
-            <hr/>
-          <Typography component="p">
-            Celular: <strong>3167063467</strong>
-          </Typography>
-        </CardContent>
-        <CardActions>
-          <Button size="small" color="primary">
-            Productos
-          </Button>
-          <Button size="small" color="primary">
-            Comprar
-          </Button>
-        </CardActions>
-      </Card>
-    </div>
-  );
+        return (
+            <Fragment>
+                <div className={classes.root}>
+                    <Grid container spacing={0}>
+                        <Grid item xs={12}>
+                            <Paper 
+                            className={classes.paper}
+                            >
+                                <MainComponent />
+                            </Paper>
+                        </Grid>
+                    </Grid>
+                </div>
+            </Fragment>
+        );
+    }
 }
 
-SimpleMediaCard.propTypes = {
-  classes: PropTypes.object.isRequired,
+MainContent.propTypes = {
+    classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(SimpleMediaCard);
+export default withStyles(styles)(MainContent);

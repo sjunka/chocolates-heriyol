@@ -1,6 +1,10 @@
+// React imports
 import React from "react";
 import ReactDOM from "react-dom";
-import { BrowserRouter } from "react-router-dom";
+
+// React Router
+//import { BrowserRouter } from "react-router-dom";
+import { HashRouter } from "react-router-dom"
 
 import App from "./App";
 
@@ -8,11 +12,11 @@ import App from "./App";
 import "typeface-roboto";
 
 
-//Wrapping App component into BrowserRouter for routing the aplication
+//Wrapping App component into HashRouter # for routing (Github pages)
 const app = (
-  <BrowserRouter>
+  <HashRouter>
     <App />
-  </BrowserRouter>
+  </HashRouter>
 );
 
 //Render app variable as Root component
