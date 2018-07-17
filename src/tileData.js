@@ -1,6 +1,10 @@
-// This file is shared across the demos.
-
+// Import React components
 import React from 'react';
+
+// Import React - Router
+import { Link } from "react-router-dom";
+
+// Import Icons from Material UI
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -29,12 +33,16 @@ export const mailFolderListItems = (
       </ListItemIcon>
       <ListItemText primary="Sobre Nosotros" />
     </ListItem>
+    
+    
     <ListItem button>
-      <ListItemIcon>
-        <DraftsIcon />
-      </ListItemIcon>
-      <ListItemText primary="Contacto" />
-    </ListItem>
+        <ListItemIcon>
+          <DraftsIcon />
+        </ListItemIcon>
+      <Link to="/contacto"  style={{textDecoration: "none", color:"black"}}>
+        <ListItemText primary="Contacto" />
+    </Link>
+      </ListItem>
   </div>
 );
 

@@ -6,10 +6,9 @@ import { Route, Switch } from "react-router-dom";
 import AppBar from "../../components/UI/AppBar/AppBar";
 import Drawer from "../../components/UI/Drawer/Drawer";
 
-// Core Components
+// Custom Components
 import MainContent from "../MainContent/MainContent";
-import Contacto from "../Contact/Contact";
-
+import Contacto from "../../containers/Contact/Contact";
 // Material UI components
 
 class Layout extends Component {
@@ -40,7 +39,7 @@ class Layout extends Component {
 
             <Switch>
                 <Route exact path="/" component={MainContent} />
-                <Route path="/contacto" component={Contacto} />
+                <Route exact path="/contacto" component={Contacto} />
 
             </Switch>
            

@@ -1,11 +1,16 @@
+// React Imports
 import React from "react";
 import PropTypes from "prop-types";
+
+// Material UI components
 import { withStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import List from "@material-ui/core/List";
 import {
     mailFolderListItems,
 } from "../../../tileData";
+
+// React Router
 
 const styles = {
     list: {
