@@ -19,7 +19,8 @@ const styles = {
   },
 };
 
-//const image = window.location.origin + '/fresas_con_chocolate.jpg'
+
+
 
 function SimpleMediaCard(props) {
   const { classes } = props;
@@ -40,7 +41,7 @@ function SimpleMediaCard(props) {
             Chocolate artesanal hecho en Santander.
             Producto ideal para cada ocasión, arreglos y tortas. 
             <br/>
-            Contactanos para mayor información
+            Contáctanos para mayor información
           </Typography>
             <hr/>
           <Typography component="p">
@@ -48,12 +49,29 @@ function SimpleMediaCard(props) {
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small" color="primary">
+
+          <Button size="medium" style={{
+            borderRadius: 35,
+            color: "white",
+            backgroundColor: "#6D4C41",
+            padding: "3px 29px",
+            fontSize: "18px"
+          }} variant="contained" >
             Productos
           </Button>
-          <Button size="small" color="primary">
+
+          <Button size="medium" style={{
+            color: "white",
+            borderRadius: 35,
+            backgroundColor: "#6D4C41",
+            padding: "3px 29px",
+            fontSize: "18px"
+          }} variant="contained" >
             Comprar
           </Button>
+         
+
+
         </CardActions>
       </Card>
     </div>

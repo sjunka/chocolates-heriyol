@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 
 // Custom Components
 import MainComponent from "../../components/MainComponent/MainComponent";
+import Contacto from "../Contact/Contact";
 
 // Material UI
 import { withStyles } from "@material-ui/core/styles";
@@ -34,6 +35,8 @@ class MainContent extends Component {
                             className={classes.paper}
                             >
                                 <MainComponent />
+                                <Contacto />
+
                             </Paper>
                         </Grid>
                     </Grid>
