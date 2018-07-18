@@ -22,8 +22,7 @@ function Contact (props) {
   const { classes } = props;
 
   return (
-    <div>
-      <Paper className={classes.root} elevation={1}>
+    <div style={{ paddingBottom: 20 }}>
         <Card 
         title="Contacto"
         content="Sorprendente con nuestros productos siguenos en nuestras redes oficiales"
@@ -31,7 +30,6 @@ function Contact (props) {
         > 
 
         </Card>
-      </Paper>
     </div>
   );
 }

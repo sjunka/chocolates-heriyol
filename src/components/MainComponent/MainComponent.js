@@ -25,7 +25,7 @@ const styles = {
 function SimpleMediaCard(props) {
   const { classes } = props;
   return (
-    <div>
+    <div style={{ paddingBottom: 20 }}>
       <Card className={classes.card}>
         <CardMedia
           className={classes.media}
@@ -51,21 +51,15 @@ function SimpleMediaCard(props) {
         <CardActions>
 
           <Button size="medium" style={{
-            borderRadius: 35,
             color: "white",
             backgroundColor: "#6D4C41",
-            padding: "3px 29px",
-            fontSize: "18px"
           }} variant="contained" >
             Productos
           </Button>
 
           <Button size="medium" style={{
             color: "white",
-            borderRadius: 35,
             backgroundColor: "#6D4C41",
-            padding: "3px 29px",
-            fontSize: "18px"
           }} variant="contained" >
             Comprar
           </Button>

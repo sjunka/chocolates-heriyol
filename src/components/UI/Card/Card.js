@@ -52,12 +52,19 @@ function SimpleMediaCard(props) {
         <Grid container spacing={24}>
             <Grid item xs={6}>
                 <Paper className={classes.paper}>
+                <Typography variant="body1" align="center" gutterBottom>
                Facebook
+                </Typography>
+               
                 </Paper>
             </Grid>
             <Grid item xs={6}>
                 <Paper className={classes.paper}>
+                <Typography variant="body1" align="center" gutterBottom>
                 Instagram
+                </Typography>
+
+
                 </Paper>
             </Grid>
         </Grid> 
@@ -65,11 +72,25 @@ function SimpleMediaCard(props) {
         <Grid container spacing={24}>
             <Grid item xs={6}>
                 <Paper className={classes.paper}>
+                <Typography variant="body1" align="center" gutterBottom>
                 Ifood                
+                </Typography>
+
+               
+               
                 </Paper>
             </Grid>
             <Grid item xs={6}>
-                <Paper className={classes.paper}>Whatsapp</Paper>
+
+
+                <Paper className={classes.paper}>
+                
+            <Typography variant="body1" align="center" gutterBottom>
+                Whatsapp
+                </Typography>
+                
+                
+                </Paper>
             </Grid>
         </Grid>
 
